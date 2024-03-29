@@ -1,0 +1,142 @@
+/* mobile-first responsive media query */
+@media screen and (max-width: 380px){
+    .header-content__title{
+        font-size: 3.8rem;
+    }
+    .header-content__description{
+        font-size: 1.4rem;
+    }
+    .newsletter__title{
+        max-width: 16rem;
+    }
+    .footer{
+        text-align: center;
+    }
+
+    .footer__right{
+        justify-content: center;
+    }
+    .footer-list{
+        margin-left: 0;
+        width: 100%;
+    }
+    .destinations::before{
+        display: none;
+    }
+
+}
+
+/* ipads and tablets */
+@media screen and (min-width: 576px){
+
+}
+@media screen and (min-width:768px){
+
+    .newsletter{
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+    .newsletter__content{
+       flex-basis: 60%;
+       padding-right: 2rem;
+    }
+    .newsletter__banner{
+       flex-basis: 40%;
+    }    
+
+    .newsletter::before{
+        width: auto;
+        height: auto;
+        top: 0;
+        left: -40rem;
+        background-size: auto;
+        background-position: center left;
+    }
+
+}
+/* small screens and laptops */
+@media screen and (min-width:857px){
+    .nav__btn,.nav-menu{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+
+
+}
+/* desktop */
+@media screen and (min-width:992px){
+    .nav__links{
+        display: block;
+    } 
+    .header-content__description{
+        min-width: 50rem;
+    }
+    .newsletter__content{
+        padding-right: 4rem;
+     }
+     .newsletter__title{
+        margin-bottom: 0;
+     }
+     .footer-app{
+        display: block;
+    }
+     .footer-app--mobile{
+        display: none;
+    }
+    .footer__wrapper{
+        display: flex;
+    }
+    .footer__left{
+        max-width: 50rem;
+    }
+    .footer__right{
+        flex-wrap:nowrap;
+    }
+    .footer__scroll{
+        left: auto;
+    }
+    .newsletter::before{
+        top: -10rem;
+        left: -30rem;
+    }
+
+}
+/* extra large screens and TVs */
+@media screen and (min-width:1200px){
+    .header{
+        min-height: 50rem;
+    }
+    .services{
+        flex-wrap:nowrap;
+    }
+    .newsletter{
+        justify-content: space-between;
+    }
+    .newsletter__content{
+        flex-basis: auto;
+        width: 60rem;
+     }
+     .newsletter__banner{
+        flex-basis: auto;
+        width: 42rem;
+     } 
+     .footer__wrapper{
+        justify-content: space-between;  
+    }
+    .footer__list{
+        margin-bottom: 0;
+        margin-left: 2rem;
+    }
+    .newsletter::before{
+        top: -15rem;
+        left: -15rem;
+    }
+}
+@media screen and (min-width:1400px){   
+    .newsletter{
+        padding: 3rem 6rem;
+    }
+}

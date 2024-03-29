@@ -1,0 +1,30 @@
+/* mobile-first responsive media query */
+/* phones */
+@media screen and (min-width: 576px){
+    .container{
+        width: 54rem;
+    }
+}
+/* tablets */
+@media screen and (min-width:768px){
+    .container{
+        width: 75rem;
+    }
+}
+/* laptops */
+@media screen and (min-width:992px){
+    .container{
+        width: 96rem;
+    }
+}
+/* desktop */
+@media screen and (min-width:1200px){
+    .container{
+        width: 114rem; 
+    }
+}
+@media screen and (min-width:1400px){   
+    .container{
+        width: 137rem;
+    }
+}
